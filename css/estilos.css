@@ -1,0 +1,64 @@
+body {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "aside header" "aside educacion" "aside educacion" "aside trabajo" "aside trabajo" "footer footer";
+}
+
+aside {
+    grid-area: aside;
+    background-color: #F2A516;
+    display: grid;
+    grid-template-rows: 2fr 4fr;
+    color: snow;
+    /* margin: 1px; */
+}
+
+#myfoto {
+    width: 90%;
+    border-radius: 110%;
+    padding: 5%;
+}
+
+#titulo {
+    border-bottom: 2PX solid white;
+    color: aliceblue;
+}
+
+header {
+    background-color: #A1C7E0;
+    text-align: center;
+    color: azure;
+}
+
+#hero {
+    border-bottom: 2PX solid white;
+}
+
+.educacion {
+    grid-area: educacion;
+    background-color: #0099DD;
+    color: aliceblue;
+}
+
+.trabajo {
+    grid-area: trabajo;
+    background-color: #00ABBD;
+    color: aliceblue;
+}
+
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    background-color: #026E81;
+    color: aliceblue;
+    align-content: center;
+    justify-content: center;
+}
+
+
+/* footer {
+    display: flex;
+    justify-content: center;
+} */
